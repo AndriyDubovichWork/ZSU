@@ -1,0 +1,29 @@
+.main {
+  .SubTitle {
+    color: #acacac;
+  }
+  .Types {
+    margin-top: 5%;
+    display: grid;
+
+    @media (min-width: 450px) {
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (min-width: 1450px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    @media (min-width: 1700px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    gap: 15px 15px;
+    grid-auto-flow: row;
+  }
+}

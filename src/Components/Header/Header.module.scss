@@ -1,0 +1,17 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../../assets/fonts/Blagovest.ttf);
+}
+
+.Header {
+  padding: 10px 20px;
+  margin: 0;
+
+  width: calc(100% - 40px);
+  height: 40px;
+
+  font-size: 2rem;
+  font-family: myFirstFont;
+
+  border-bottom: #000 1px solid;
+}

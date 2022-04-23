@@ -1,13 +1,13 @@
 import React from 'react';
-import Lending from '../Lending/Lending';
+import Landing from '../Landing/Landing';
 //@ts-ignore
 import style from './App.module.scss';
 
 function App() {
   return (
-    <>
-      <Lending />
-    </>
+    <div className={style.main}>
+      <Landing />
+    </div>
   );
 }
 

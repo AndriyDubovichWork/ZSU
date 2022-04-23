@@ -1,0 +1,111 @@
+.fotter {
+  width: calc(100% - 80px);
+  height: 300px;
+  padding: 40px 40px;
+  border-top: #000 solid 1px;
+  background-color: #1e1e1e;
+  display: grid;
+  @media (min-width: 450px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-row-gap: 20px;
+  }
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-row-gap: 0px;
+  }
+  grid-column-gap: 0px;
+
+  margin: auto;
+}
+
+.phoneAndAdress {
+  text-align: left;
+  @media (min-width: 450px) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 1 / 1 / 4 / 2;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  h1 {
+    padding: 20px 0;
+    font-weight: 1000;
+  }
+  h3 {
+    padding: 20px 0;
+    color: #acacac;
+  }
+}
+
+.FaceBookPagesOfArmies {
+  @media (min-width: 450px) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 3 / 2 / 5 / 3;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 1 / 3 / 3 / 4;
+  }
+}
+.MainSocialMedias {
+  display: flex;
+  align-items: center;
+  @media (min-width: 450px) {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+}
+.LeadersContacts {
+  @media (min-width: 450px) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 1 / 2 / 3 / 3;
+  }
+}
+.SiteMap {
+  display: flex;
+  align-items: end;
+  @media (min-width: 450px) {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+.Copyright {
+  display: flex;
+  align-items: end;
+  color: #acacac;
+  @media (min-width: 450px) {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  @media (min-width: 720px) {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  @media (min-width: 1200px) {
+    grid-area: 3 / 3 / 4 / 4;
+  }
+}

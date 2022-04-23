@@ -1,0 +1,52 @@
+.main {
+  display: inline-block;
+  margin: 0 auto;
+  .front {
+    height: 300px;
+    border-radius: 20px;
+    width: 250px;
+    padding: 18px;
+    background-color: #1e1e1e;
+    border: 1px #000000 solid;
+
+    display: table;
+    .content {
+      background-color: #1e1e1e;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      .name {
+        background-color: #1e1e1e;
+      }
+      p {
+        background-color: #1e1e1e;
+        .img {
+          background-color: #1e1e1e;
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+
+  .back {
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    padding: 18px;
+    background-color: #1e1e1e;
+    border: 1px #000 solid;
+    img {
+      background: rgb(78, 64, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(78, 64, 255, 1) 0%,
+        rgba(243, 255, 0, 1) 100%
+      );
+      border: 1px #000 solid;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
