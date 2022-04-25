@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/some-landing/static/css/main.02f0fdac.css",
+    "main.js": "/some-landing/static/js/main.67577dcc.js",
+    "static/media/specOps.png": "/some-landing/static/media/specOps.db952f6df0f08f14a052.png",
+    "static/media/landingAirForces.png": "/some-landing/static/media/landingAirForces.f3076f7ca0597e549dd2.png",
+    "static/media/United.png": "/some-landing/static/media/United.0dbdca6a866c8a485e7e.png",
+    "static/media/SupportLeader.png": "/some-landing/static/media/SupportLeader.584a3c59cd5eb0a91256.png",
+    "static/media/LogisticsLeader.png": "/some-landing/static/media/LogisticsLeader.cfa783322046ab45a3b9.png",
+    "static/media/Support.png": "/some-landing/static/media/Support.ff72398abd659975154d.png",
+    "static/media/tanks.jpg": "/some-landing/static/media/tanks.f04011308f00589a35ac.jpg",
+    "static/media/medicalLeader.png": "/some-landing/static/media/medicalLeader.ac67a8fc7e347d066539.png",
+    "static/media/Logistics.png": "/some-landing/static/media/Logistics.b550873f6b26e867b960.png",
+    "static/media/UnitedLeader.png": "/some-landing/static/media/UnitedLeader.dbf9fdde55f292766e85.png",
+    "static/media/seaForces.png": "/some-landing/static/media/seaForces.7d86e33c45bbd0970d75.png",
+    "static/media/airForces.png": "/some-landing/static/media/airForces.e62d65af89dd448ca13f.png",
+    "static/media/landForces.png": "/some-landing/static/media/landForces.b7d76ea70ae867a15d37.png",
+    "static/media/boat.jpg": "/some-landing/static/media/boat.b8d079ed3b4d072e6197.jpg",
+    "static/media/specOps.jpg": "/some-landing/static/media/specOps.de1210f998d8e2737930.jpg",
+    "static/media/plane.jpg": "/some-landing/static/media/plane.0a22dd9820eb2e233aed.jpg",
+    "static/media/KiberSecurityLeader.png": "/some-landing/static/media/KiberSecurityLeader.67ba4f1c79cea5d1b5d5.png",
+    "static/media/Blagovest.ttf": "/some-landing/static/media/Blagovest.0fdb7438c929a9b8f69a.ttf",
+    "static/media/KiberSecurity.png": "/some-landing/static/media/KiberSecurity.df850bcfbdb3dbf0bcea.png",
+    "static/media/medical.png": "/some-landing/static/media/medical.25d87a70630c3811ef23.png",
+    "index.html": "/some-landing/index.html",
+    "main.02f0fdac.css.map": "/some-landing/static/css/main.02f0fdac.css.map",
+    "main.67577dcc.js.map": "/some-landing/static/js/main.67577dcc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02f0fdac.css",
+    "static/js/main.67577dcc.js"
+  ]
+}
