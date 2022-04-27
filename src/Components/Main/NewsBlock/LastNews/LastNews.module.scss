@@ -1,0 +1,15 @@
+.main {
+  width: 80%;
+  margin: 5% auto;
+  .Title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .News {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+  }
+}

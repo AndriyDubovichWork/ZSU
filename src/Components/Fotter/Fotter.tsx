@@ -1,5 +1,39 @@
 import React from 'react';
 import style from './Fotter.module.scss';
+import { SocialIcon } from 'react-social-icons';
+
+const LeadersContactsArr = [
+  { url: 'https://www.president.gov.ua/en', text: 'Президент України' },
+  { url: 'https://www.rada.gov.ua/', text: 'Верховна Рада України' },
+  { url: 'https://www.mil.gov.ua/', text: 'Міністерство оборони України' },
+  {
+    url: 'https://mva.gov.ua/ua',
+    text: 'Міністерство у справах ветеранів України',
+  },
+];
+const FaceBookPagesOfArmiesArr = [
+  {
+    url: 'https://www.facebook.com/UkrainianLandForces/',
+    text: 'Сухопутні війська',
+  },
+  { url: 'https://www.facebook.com/kpszsu/', text: 'Повітряні Сили' },
+  { url: 'https://navy.mil.gov.ua/', text: 'Військово-Морські Сили' },
+  {
+    url: 'https://www.dshv.mil.gov.ua/istoriya',
+    text: 'Десантно-штурмові війська',
+  },
+  { url: 'http://sof.mil.gov.ua/join', text: 'Сили спеціальних операцій' },
+  {
+    url: 'https://www.facebook.com/UA.Military.Police/',
+    text: ' Військова служба правопорядку',
+  },
+];
+const MainSocialMediasArr = [
+  'https://www.facebook.com/GeneralStaff.ua',
+  'https://mobile.twitter.com/GeneralStaffUA',
+  'https://www.youtube.com/channel/UC10u3bDYe1HMHOQLvufXqjA',
+  'https://www.instagram.com/uaf_general_staff/',
+];
 
 const Fotter = () => {
   return (
@@ -13,31 +47,40 @@ const Fotter = () => {
         </h3>
       </div>
       <div className={style.LeadersContacts}>
-        <a>Президент України</a>
-        <br />
-        <a>Верховна Рада України</a>
-        <br />
-        <a>Міністерство оборони України</a>
-        <br />
-        <a>Міністерство у справах ветеранів України</a>
+        {LeadersContactsArr.map((obj) => {
+          return (
+            <>
+              <a target='_blank' href={obj.url}>
+                {obj.text}
+              </a>
+              <br />
+            </>
+          );
+        })}
       </div>
       <div className={style.FaceBookPagesOfArmies}>
-        <a>Сухопутні війська</a>
-        <br />
-        <a>Повітряні Сили </a>
-        <br />
-        <a>Військово-Морські Сили</a>
-        <br />
-        <a>Десантно-штурмові війська</a>
-        <br />
-        <a>Сили спеціальних операцій</a>
-        <br />
-        <a>Військова служба правопорядку</a>
+        {FaceBookPagesOfArmiesArr.map((obj) => {
+          return (
+            <>
+              <a target='_blank' href={obj.url}>
+                {obj.text}
+              </a>
+              <br />
+            </>
+          );
+        })}
       </div>
       <div className={style.MainSocialMedias}>
-        <a>I </a>
-        <a>F </a>
-        <a>Y</a>
+        {MainSocialMediasArr.map((url) => {
+          return (
+            <SocialIcon
+              target='_blank'
+              url={url}
+              style={{ height: '20px', width: '20px', margin: '0 10px' }}
+              bgColor={'#fff'}
+            />
+          );
+        })}
       </div>
       <div className={style.SiteMap}>Карта сайту</div>
       <div className={style.Copyright}>©2021 Збройні Сили України</div>

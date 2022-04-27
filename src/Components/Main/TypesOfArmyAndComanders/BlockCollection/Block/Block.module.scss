@@ -1,6 +1,7 @@
 .main {
   display: inline-block;
   margin: 0 auto;
+
   .front {
     height: 300px;
     border-radius: 20px;
@@ -8,6 +9,7 @@
     padding: 18px;
     background-color: #1e1e1e;
     border: 1px #000000 solid;
+    box-shadow: 0px 0px 15px -4px #000;
 
     display: table;
     .content {
@@ -18,8 +20,11 @@
       .name {
         background-color: #1e1e1e;
       }
-      p {
+      .ImageDiv {
         background-color: #1e1e1e;
+
+        text-align: center;
+
         .img {
           background-color: #1e1e1e;
           width: 100px;
@@ -36,6 +41,7 @@
     padding: 18px;
     background-color: #1e1e1e;
     border: 1px #000 solid;
+    box-shadow: 0px 0px 15px -4px #000;
     img {
       background: rgb(78, 64, 255);
       background: linear-gradient(
@@ -44,9 +50,31 @@
         rgba(243, 255, 0, 1) 100%
       );
       border: 1px #000 solid;
-      height: 100%;
+      box-shadow: 0px 0px 15px -4px #000;
+      border-radius: 5px;
+      height: 70%;
       width: 100%;
       object-fit: cover;
+    }
+    img:hover {
+      border: 1px #fff solid;
+      box-shadow: 0px 0px 15px -4px #fff;
+    }
+
+    .IconDiv {
+      display: flex;
+      justify-content: center;
+      .Icon {
+        margin-top: 20px;
+        border: 1px #000 solid;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px -4px #000;
+      }
+      .Icon:hover {
+        border: 1px #fff solid;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px -4px #fff;
+      }
     }
   }
 }

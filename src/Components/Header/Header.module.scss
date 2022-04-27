@@ -13,5 +13,11 @@
   font-size: 2rem;
   font-family: myFirstFont;
 
+  background-color: #1e1e1e;
   border-bottom: #000 1px solid;
+  box-shadow: 2px 8px 25px 0px rgba(0, 0, 0, 0.5);
+  .Logo {
+    color: #fff;
+    text-decoration: none;
+  }
 }

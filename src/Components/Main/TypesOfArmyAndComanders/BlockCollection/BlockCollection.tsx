@@ -2,7 +2,7 @@ import React from 'react';
 import Block from './Block/Block';
 import style from './BlockCollection.module.scss';
 
-type BlockType = { name: string; img: string; backImg: string };
+type BlockType = { name: string; img: string; backImg: string; url: string };
 
 type BlockCollectionType = {
   CardFliedData: BlockType[];
@@ -17,7 +17,15 @@ const BlockCollection = (props: BlockCollectionType) => {
       <h3 className={style.SubTitle}>{SubTitle}</h3>
       <div className={style.Types}>
         {CardFliedData.map((obj: BlockType) => {
-          return <Block img={obj.img} name={obj.name} backImg={obj.backImg} />;
+          return (
+            <Block
+            key={obj.url+obj.img}
+              url={obj.url}
+              img={obj.img}
+              name={obj.name}
+              backImg={obj.backImg}
+            />
+          );
         })}
       </div>
     </div>
