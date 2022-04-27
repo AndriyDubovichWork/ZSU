@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Fotter from '../Fotter/Fotter';
 import Main from './../Main/Main';
-
+import NotFound from '../NotFound/NotFound';
 function App() {
   return (
     <div className={style.main}>
@@ -14,6 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/some-landing' element={<Main />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
         <Fotter />
       </BrowserRouter>

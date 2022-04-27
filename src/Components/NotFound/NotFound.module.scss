@@ -1,0 +1,14 @@
+.NotFound {
+  width: 100%;
+  margin: 30% auto;
+  .Header {
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width: 720px) {
+      font-size: 50px;
+    }
+    @media (min-width: 1280px) {
+      font-size: 90px;
+    }
+  }
+}

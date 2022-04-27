@@ -1,13 +1,13 @@
 import React from 'react';
 import style from './Main.module.scss';
 import TypesOfArmyAndComanders from './TypesOfArmyAndComanders/TypesOfArmyAndComanders';
-import NewsBlock from './NewsBlock/NewsBlock';
+import News from './News/News';
 
 const Main = () => {
   return (
     <div className={style.main}>
       <TypesOfArmyAndComanders />
-      <NewsBlock />
+      <News />
     </div>
   );
 };

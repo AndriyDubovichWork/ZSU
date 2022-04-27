@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './LastNews.module.scss';
 import LastNewsBlock from './LastNewsBlock/LastNewsBlock';
-import { someNews } from './../NewsBlock';
+import { someNews } from '../MainNewsBlock/MainNewsBlock';
 
 type NewsType = {
   id: number;
