@@ -1,6 +1,11 @@
+@font-face {
+  font-family: SexyUkrainianFont;
+  src: url(./assets/fonts/Blagovest.ttf);
+}
 * {
   padding: 0;
   margin: 0;
+  font-family: SexyUkrainianFont;
 }
 body {
   color: #fff;

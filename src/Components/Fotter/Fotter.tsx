@@ -37,7 +37,7 @@ const MainSocialMediasArr = [
 
 const Fotter = () => {
   return (
-    <div className={style.fotter}>
+    <footer className={style.fotter}>
       <div className={style.phoneAndAdress}>
         <h2>тел.факс (044) 454-45-73</h2>
         <h3>
@@ -49,32 +49,33 @@ const Fotter = () => {
       <div className={style.LeadersContacts}>
         {LeadersContactsArr.map((obj) => {
           return (
-            <>
+            <div key={obj.url}>
               <a target='_blank' href={obj.url}>
                 {obj.text}
               </a>
               <br />
-            </>
+            </div>
           );
         })}
       </div>
       <div className={style.FaceBookPagesOfArmies}>
         {FaceBookPagesOfArmiesArr.map((obj) => {
           return (
-            <>
+            <div key={obj.url}>
               <a target='_blank' href={obj.url}>
                 {obj.text}
               </a>
               <br />
-            </>
+            </div>
           );
         })}
       </div>
       <div className={style.MainSocialMedias}>
-        {MainSocialMediasArr.map((url) => {
+        {MainSocialMediasArr.map((url: string) => {
           return (
             <SocialIcon
               target='_blank'
+              key={url}
               url={url}
               style={{ height: '20px', width: '20px', margin: '0 10px' }}
               bgColor={'#fff'}
@@ -84,7 +85,7 @@ const Fotter = () => {
       </div>
       <div className={style.SiteMap}>Карта сайту</div>
       <div className={style.Copyright}>©2021 Збройні Сили України</div>
-    </div>
+    </footer>
   );
 };
 
