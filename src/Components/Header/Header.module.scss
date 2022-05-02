@@ -8,14 +8,15 @@
   margin: 0;
 
   width: calc(100% - 40px);
-  height: 20%;
+
+  height: 30px;
 
   font-family: SexyUkrainianFont;
 
   background-color: #1e1e1e;
   border-bottom: #000 1px solid;
   box-shadow: 2px 8px 25px 0px rgba(0, 0, 0, 0.5);
-  .Logo {
+  .HeaderText {
     color: #fff;
     text-decoration: none;
 
@@ -26,13 +27,19 @@
       font-size: 20px;
     }
     @media (min-width: 720px) {
-      font-size: 30px;
+      font-size: 25px;
     }
     @media (min-width: 1280px) {
-      font-size: 50px;
+      font-size: 30px;
     }
     @media (min-width: 1980px) {
-      font-size: 90px;
+      font-size: 35px;
     }
+  }
+  .Logo {
+    float: left;
+  }
+  .News {
+    float: right;
   }
 }

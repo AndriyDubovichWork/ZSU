@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header';
 import Fotter from '../Fotter/Fotter';
 import Main from './../Main/Main';
+import News from './../News/News';
 import NotFound from '../NotFound/NotFound';
+import AllNewsList from './../AllNewsList/AllNewsList';
 function App() {
   return (
     <div className={style.main}>
@@ -14,6 +16,9 @@ function App() {
         <Header />
         <Routes>
           <Route path='/some-landing' element={<Main />} />
+          <Route path='/some-landing/news' element={<News />} />
+          <Route path='/some-landing/Allnews' element={<AllNewsList />} />
+
           <Route path='*' element={<NotFound />} />
         </Routes>
         <Fotter />
