@@ -1,0 +1,38 @@
+.NewsUnit {
+  width: 90%;
+  padding: 20px;
+  background-color: #1e1e1e;
+  box-shadow: 0px 0px 15px -4px #000;
+  border: #000 1px solid;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .text {
+    grid-area: 1 / 1 / 2 / 5;
+    .header {
+      font-size: 25px;
+    }
+    .date {
+      font-size: 15px;
+      color: #acacac;
+    }
+  }
+
+  .Image {
+    width: 200px;
+    height: 150px;
+    float: right;
+    grid-area: 1 / 5 / 2 / 6;
+  }
+}
+.NewsUnit:hover {
+  border: #fff 1px solid;
+  box-shadow: 0px 0px 15px -4px #fff;
+}

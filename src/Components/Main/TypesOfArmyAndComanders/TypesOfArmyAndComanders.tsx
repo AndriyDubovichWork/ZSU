@@ -27,7 +27,7 @@ import MedicalLeader from '../../../assets/imgs/Leaders/medicalLeader.png';
 import LogisticsLeader from '../../../assets/imgs/Leaders/LogisticsLeader.png';
 import KiberSecurityLeader from '../../../assets/imgs/Leaders/KiberSecurityLeader.png';
 
-const ArmyTypesFliedData = [
+export const ArmyTypesFliedData = [
   {
     img: airForces,
     name: 'Повітряні сили',

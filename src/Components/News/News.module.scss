@@ -1,3 +1,13 @@
 .News {
-  padding: 20px;
+  padding: 40px;
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #1e1e1e;
+  border: 1px #000 solid;
+  border-radius: 20px;
+
+  .title {
+    margin: 10px 0;
+  }
 }

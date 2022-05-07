@@ -1,4 +1,15 @@
-.News {
-  width: 100%;
-  padding: 20px;
+.main {
+  .Header {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .News {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 25px;
+  }
 }

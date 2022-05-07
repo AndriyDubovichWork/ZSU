@@ -17,11 +17,7 @@ const Block = (props: BlockType) => {
   return (
     <div className={style.main}>
       <ReactCardFlip isFlipped={isFlipped} flipDirection='horizontal'>
-        <div
-          onMouseEnter={() => setIsFlipped(true)}
-          onMouseLeave={() => setIsFlipped(false)}
-          className={style.front}
-        >
+        <div onClick={() => setIsFlipped(true)} className={style.front}>
           <div className={style.content}>
             <div className={style.ImageDiv}>
               <img className={style.img} src={img} />
@@ -29,11 +25,7 @@ const Block = (props: BlockType) => {
             <h2 className={style.name}>{name}</h2>
           </div>
         </div>
-        <div
-          onMouseEnter={() => setIsFlipped(true)}
-          onMouseLeave={() => setIsFlipped(false)}
-          className={style.back}
-        >
+        <div onClick={() => setIsFlipped(false)} className={style.back}>
           <img src={backImg} />
           <div className={style.IconDiv}>
             <SocialIcon

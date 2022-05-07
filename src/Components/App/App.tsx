@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/some-landing' element={<Main />} />
-          <Route path='/some-landing/news' element={<News />} />
+          <Route path='/some-landing/news/:id' element={<News />} />
           <Route path='/some-landing/Allnews' element={<AllNewsList />} />
 
           <Route path='*' element={<NotFound />} />
