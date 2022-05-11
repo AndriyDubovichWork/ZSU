@@ -8,6 +8,7 @@ const Main = () => {
     <div className={style.main}>
       <TypesOfArmyAndComanders />
       <News />
+      
     </div>
   );
 };

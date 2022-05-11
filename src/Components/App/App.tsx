@@ -23,6 +23,7 @@ function App() {
         </Routes>
         <Fotter />
       </BrowserRouter>
+      <h3 className={style.unofficial}>НЕОФІЦІЙНИЙ САЙТ</h3>
     </div>
   );
 }

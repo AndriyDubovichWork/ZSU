@@ -3,6 +3,7 @@ import style from './MainNewsBlock.module.scss';
 import NewsElement from './NewsElement/NewsElement';
 import img from './../../../../assets/imgs/Types/specOps.jpg';
 import LastNews from '../LastNews/LastNews';
+import Button from '../../../styled/Button/Button';
 
 export const someNews = [
   {
@@ -113,6 +114,7 @@ const MainNewsBlock = () => {
             return <NewsElement key={news.id} news={news} />;
           })}
         </div>
+        <Button url='' />
       </div>
     </>
   );

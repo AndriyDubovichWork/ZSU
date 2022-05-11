@@ -1,4 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  .unofficial {
+    position: sticky;
+    text-align: end;
+    bottom: 10px;
+    color: red;
+  }
 }

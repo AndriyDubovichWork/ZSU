@@ -9,13 +9,15 @@
 
   width: calc(100% - 40px);
 
-  height: 36px;
+  height: 4%;
 
   font-family: SexyUkrainianFont;
 
   background-color: #1e1e1e;
   border-bottom: #000 1px solid;
   box-shadow: 2px 8px 25px 0px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-around;
   .HeaderText {
     color: #fff;
     text-decoration: none;
@@ -38,8 +40,5 @@
   }
   .Logo {
     float: left;
-  }
-  .News {
-    float: right;
   }
 }

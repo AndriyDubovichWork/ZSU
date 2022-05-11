@@ -17,10 +17,9 @@ const BlockCollection = (props: BlockCollectionType) => {
       <h3 className={style.SubTitle}>{SubTitle}</h3>
       <div className={style.Types}>
         {CardFliedData.map((obj: BlockType) => {
-          console.log(obj.img)
           return (
             <Block
-            key={obj.url+obj.img}
+              key={obj.url + obj.img}
               url={obj.url}
               img={obj.img}
               name={obj.name}
