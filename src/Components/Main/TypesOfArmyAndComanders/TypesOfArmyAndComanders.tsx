@@ -1,6 +1,6 @@
 import React from 'react';
 //@ts-nocheck
-import style from './TypesOfArmy.module.scss';
+import style from './TypesOfArmyAndComanders.module.scss';
 import BlockCollection from './BlockCollection/BlockCollection';
 
 import airForces from '../../../assets/imgs/Types/airForces.png';
@@ -94,7 +94,7 @@ const ComandersFliedData = [
 
 const TypesOfArmyAndComanders = () => {
   return (
-    <div>
+    <div className={style.main}>
       <BlockCollection
         Title='Види, роди військ (сил)'
         SubTitle='Збройних Сил України'

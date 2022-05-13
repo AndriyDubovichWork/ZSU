@@ -5,6 +5,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 
 import Slide from '@mui/material/Slide';
 import AppBar from '@mui/material/AppBar';
+import { Divider } from '@mui/material';
 
 const Header = (props: any) => {
   const trigger = useScrollTrigger();
@@ -20,6 +21,12 @@ const Header = (props: any) => {
               ЗСУ
             </NavLink>
             <NavLink
+              to='/some-landing/about_us'
+              className={`${style.HeaderText}`}
+            >
+              ПРО НАС
+            </NavLink>
+            <NavLink
               to='/some-landing/Allnews'
               className={`${style.HeaderText}`}
             >
@@ -29,7 +36,37 @@ const Header = (props: any) => {
               to='/some-landing/Allnews'
               className={`${style.HeaderText}`}
             >
-              також НОВИНИ
+              ООС
+            </NavLink>
+            <NavLink
+              to='/some-landing/Allnews'
+              className={`${style.HeaderText}`}
+            >
+              КОРИСНЕ
+            </NavLink>
+            <NavLink
+              to='/some-landing/Allnews'
+              className={`${style.HeaderText}`}
+            >
+              КАР'ЄРА
+            </NavLink>
+            <NavLink
+              to='/some-landing/Allnews'
+              className={`${style.HeaderText}`}
+            >
+              МЕДІА
+            </NavLink>
+            <NavLink
+              to='/some-landing/Allnews'
+              className={`${style.HeaderText}`}
+            >
+              СТІНА ПАМ'ЯТІ
+            </NavLink>
+            <NavLink
+              to='/some-landing/Allnews'
+              className={`${style.HeaderText}`}
+            >
+              КОНТАКТИ
             </NavLink>
           </div>
         </AppBar>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 //@ts-ignore
 import style from './App.module.scss';
@@ -9,7 +9,11 @@ import Main from './../Main/Main';
 import News from './../News/News';
 import NotFound from '../NotFound/NotFound';
 import AllNewsList from './../AllNewsList/AllNewsList';
+import Alert from '@mui/material/Alert';
+import { Collapse, Tooltip } from '@mui/material';
+
 function App() {
+  const [showMessage, setShowMessage] = useState(true);
   return (
     <div className={style.main}>
       <BrowserRouter>
@@ -23,7 +27,17 @@ function App() {
         </Routes>
         <Fotter />
       </BrowserRouter>
-      <h3 className={style.unofficial}>НЕОФІЦІЙНИЙ САЙТ</h3>
+      {showMessage ? (
+        <Alert
+          onClose={() => setShowMessage(false)}
+          severity='error'
+          className={style.unofficial}
+        >
+          НЕОФІЦІЙНИЙ САЙТ
+        </Alert>
+      ) : (
+        ''
+      )}
     </div>
   );
 }

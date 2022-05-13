@@ -154,6 +154,7 @@ const News = () => {
             <>
               <h1 className={style.title}>{obj.title}</h1>
               <h4>{obj.date}</h4>
+              <img className={style.img} src={obj.img} />
               <h3>{obj.text}</h3>
             </>
           );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import style from './NewsUnit.module.scss';
 
 type NewsUnitType = {
@@ -13,7 +14,7 @@ type NewsUnitType = {
 const NewsUnit = (props: NewsUnitType) => {
   const { date, header, url, img, id, text } = props;
   return (
-    <a className={style.NewsUnit} href={'/some-landing/news/' + id}>
+    <Link className={style.NewsUnit} to={'/some-landing/news/' + id}>
       <div className={style.text}>
         <h4 className={style.date}>{date}</h4>
         <h1 className={style.header}>{header}</h1>
@@ -21,7 +22,7 @@ const NewsUnit = (props: NewsUnitType) => {
       </div>
 
       <img src={img} className={style.Image} />
-    </a>
+    </Link>
   );
 };
 

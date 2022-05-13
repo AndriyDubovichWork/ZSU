@@ -1,12 +1,15 @@
 .News {
   padding: 40px;
   width: 80%;
-  margin: 30px auto;
+  margin: 10% auto;
   text-align: center;
   background-color: #1e1e1e;
   border: 1px #000 solid;
   border-radius: 20px;
-
+  .img {
+    margin: 20px 0;
+    width: 100%;
+  }
   .title {
     margin: 10px 0;
   }
