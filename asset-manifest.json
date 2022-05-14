@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ZSU/static/css/main.db7c861b.css",
-    "main.js": "/ZSU/static/js/main.70b981a5.js",
+    "main.js": "/ZSU/static/js/main.c2b85cff.js",
     "static/media/specOps.png": "/ZSU/static/media/specOps.db952f6df0f08f14a052.png",
     "static/media/landingAirForces.png": "/ZSU/static/media/landingAirForces.f3076f7ca0597e549dd2.png",
     "static/media/United.png": "/ZSU/static/media/United.0dbdca6a866c8a485e7e.png",
@@ -24,10 +24,10 @@
     "static/media/medical.png": "/ZSU/static/media/medical.25d87a70630c3811ef23.png",
     "index.html": "/ZSU/index.html",
     "main.db7c861b.css.map": "/ZSU/static/css/main.db7c861b.css.map",
-    "main.70b981a5.js.map": "/ZSU/static/js/main.70b981a5.js.map"
+    "main.c2b85cff.js.map": "/ZSU/static/js/main.c2b85cff.js.map"
   },
   "entrypoints": [
     "static/css/main.db7c861b.css",
-    "static/js/main.70b981a5.js"
+    "static/js/main.c2b85cff.js"
   ]
 }
