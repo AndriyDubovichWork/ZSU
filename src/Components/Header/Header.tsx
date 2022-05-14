@@ -14,58 +14,31 @@ const Header = (props: any) => {
       <Slide appear={false} direction='down' in={!trigger}>
         <AppBar>
           <div className={style.Header}>
-            <NavLink
-              to='/some-landing'
-              className={`${style.HeaderText} ${style.Logo}`}
-            >
+            <NavLink to='/ZSU' className={`${style.Logo}`}>
               ЗСУ
             </NavLink>
-            <NavLink
-              to='/some-landing/about_us'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/about_us' className={`${style.HeaderText}`}>
               ПРО НАС
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               НОВИНИ
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               ООС
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               КОРИСНЕ
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               КАР'ЄРА
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               МЕДІА
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               СТІНА ПАМ'ЯТІ
             </NavLink>
-            <NavLink
-              to='/some-landing/Allnews'
-              className={`${style.HeaderText}`}
-            >
+            <NavLink to='/ZSU/Allnews' className={`${style.HeaderText}`}>
               КОНТАКТИ
             </NavLink>
           </div>

@@ -3,12 +3,12 @@ import style from './NewsElement.module.scss';
 import { NavLink } from 'react-router-dom';
 
 type NewsElementType = {
-  news: { img: string; date: string; title: string; url: string };
+  news: { img: string; date: string; title: string; id: number };
 };
 
 const NewsElement = (props: NewsElementType) => {
   return (
-    <NavLink to={props.news.url} className={style.news}>
+    <NavLink to={`/ZSU/news/${props.news.id}`} className={style.news}>
       <img src={props.news.img} />
       <div className={style.Text}>
         <h4 className={style.Date}>{props.news.date}</h4>

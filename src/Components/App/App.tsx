@@ -19,9 +19,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='/some-landing' element={<Main />} />
-          <Route path='/some-landing/news/:id' element={<News />} />
-          <Route path='/some-landing/Allnews' element={<AllNewsList />} />
+          <Route path='/ZSU' element={<Main />} />
+          <Route path='/ZSU/news/:id' element={<News />} />
+          <Route path='/ZSU/Allnews' element={<AllNewsList />} />
 
           <Route path='*' element={<NotFound />} />
         </Routes>

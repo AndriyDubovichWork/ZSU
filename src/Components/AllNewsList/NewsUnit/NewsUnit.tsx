@@ -5,16 +5,15 @@ import style from './NewsUnit.module.scss';
 type NewsUnitType = {
   date: string;
   header: string;
-  url: string;
   text: string;
   img: string;
   id: number;
 };
 
 const NewsUnit = (props: NewsUnitType) => {
-  const { date, header, url, img, id, text } = props;
+  const { date, header, img, id, text } = props;
   return (
-    <Link className={style.NewsUnit} to={'/some-landing/news/' + id}>
+    <Link className={style.NewsUnit} to={'/ZSU/news/' + id}>
       <div className={style.text}>
         <h4 className={style.date}>{date}</h4>
         <h1 className={style.header}>{header}</h1>

@@ -1,14 +1,13 @@
 import React from 'react';
 import style from './LastNews.module.scss';
 import LastNewsBlock from './LastNewsBlock/LastNewsBlock';
-import { someNews } from '../MainNewsBlock/MainNewsBlock';
+import { someNews } from './../../../News/News';
 
 type NewsType = {
   id: number;
   img: string;
   date: string;
   title: string;
-  url: string;
 };
 
 const LastNews = () => {

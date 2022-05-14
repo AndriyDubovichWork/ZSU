@@ -2,7 +2,8 @@ import React from 'react';
 //@ts-ignore
 import style from './AllNewsList.module.scss';
 import NewsUnit from './NewsUnit/NewsUnit';
-import { someNews } from './../Main/News/MainNewsBlock/MainNewsBlock';
+import { someNews } from './../News/News';
+
 const AllNewsList = () => {
   return (
     <div className={style.main}>
@@ -14,7 +15,6 @@ const AllNewsList = () => {
               date={obj.date}
               header={obj.title}
               text={obj.text}
-              url={obj.url}
               id={obj.id}
               img={obj.img}
             />

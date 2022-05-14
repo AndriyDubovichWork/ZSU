@@ -26,7 +26,9 @@ const Block = (props: BlockType) => {
           </div>
         </div>
         <div onClick={() => setIsFlipped(false)} className={style.back}>
-          <img src={backImg} />
+          <a target={'_blank'} href={url}>
+            <img src={backImg} />
+          </a>
           <div className={style.IconDiv}>
             <SocialIcon
               target='_blank'
