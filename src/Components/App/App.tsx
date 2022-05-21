@@ -10,7 +10,9 @@ import News from './../News/News';
 import NotFound from '../NotFound/NotFound';
 import AllNewsList from './../AllNewsList/AllNewsList';
 import Alert from '@mui/material/Alert';
+
 import { Collapse, Tooltip } from '@mui/material';
+import AboutUs from '../AboutUs/AboutUs';
 
 function App() {
   const [showMessage, setShowMessage] = useState(true);
@@ -18,13 +20,16 @@ function App() {
     <div className={style.main}>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path='/ZSU' element={<Main />} />
-          <Route path='/ZSU/news/:id' element={<News />} />
-          <Route path='/ZSU/Allnews' element={<AllNewsList />} />
+        <div className={style.content}>
+          <Routes>
+            <Route path='/ZSU' element={<Main />} />
+            <Route path='/ZSU/news/:id' element={<News />} />
+            <Route path='/ZSU/Allnews' element={<AllNewsList />} />
+            <Route path='/ZSU/about_us' element={<AboutUs />} />
 
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </div>
         <Fotter />
       </BrowserRouter>
       {showMessage ? (
